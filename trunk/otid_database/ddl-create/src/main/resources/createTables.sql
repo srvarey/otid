@@ -21,6 +21,9 @@ CREATE  TABLE IF NOT EXISTS `otid`.`otid_user` (
   PRIMARY KEY (`user_id`) );
 
 SHOW WARNINGS;
+CREATE UNIQUE INDEX `login` ON `otid`.`otid_user` (`login` ASC) ;
+
+SHOW WARNINGS;
 
 -- -----------------------------------------------------
 -- Table `otid`.`otid_provider_type`
